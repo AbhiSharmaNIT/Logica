@@ -1,0 +1,57 @@
+/* Keep your existing styles for .main, .chat, .btn, etc. */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.chat {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
+
+/* ... other styles ... */
+
+
+
+/* --- Add these new styles --- */
+
+/* Styles for the response container box */
+.response-container {
+  width: 1000px;
+  margin: 20px auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative; /* This is crucial for positioning the copy button */
+  background-color: #2d2d2d; /* Matches the atomDark theme */
+}
+
+/* Styles for the copy button */
+.copy-btn {
+  position: absolute; /* Position it relative to the container */
+  top: 8px;
+  right: 8px;
+  padding: 5px 10px;
+  background-color: #4a4a4a;
+  color: #ccc;
+  border: 1px solid #666;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+  z-index: 10; /* Ensure it's on top */
+  transition: background-color 0.2s ease;
+}
+
+.copy-btn:hover {
+  background-color: #5a5a5a;
+}
